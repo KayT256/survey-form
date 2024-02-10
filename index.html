@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>College Survey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="background"></div>
+        <h1 id="title">College Survey</h1>
+        <p id="description">What are your preferences when choosing colleges?</p>
+        <form id="survey-form">
+        <div id="form-body">
+            <fieldset id="personal-information">
+                <legend>Personal Information</legend>
+                <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="Your name" required></label>
+                <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="youremail@email.com" required></label>
+                <label id="age-label" for="age">Age: <input id="age" name="age" type="number" min=16 max=80 placeholder="17" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>College Preferences</legend>
+                <label id="number-label" for="number">How many schools do you intend to apply to? <input id="number" name="number" type="number" min=1 max=20 placeholder="20" required></label>
+                <p class="p-format">Campus Setting</p class="p-format">
+                <label class="settings-label" for="rural"><input id="rural" name="settings" type="checkbox" value="rural"> Rural</label>
+                <label class="settings-label" for="suburban"><input id="suburban" name="settings" type="checkbox" value="suburban"> Suburban</label>
+                <label class="settings-label" for="urban"><input id="urban" name="settings" type="checkbox" value="urban"> Urban</label>
+                <p class="p-format">Public/Private</p class="p-format">
+                <label class="public-private-label" for="public"><input id="public" name="public-private" type="checkbox" value="public"> Public</label>
+                <label class="public-private-label" for="private"><input id="private" name="public-private" type="checkbox" value="private"> Private</label>
+                <label id="tuition-fee-label" for="tuition-fee"> Tuition and Fees
+                    <select id="dropdown" name="tuition-fee" required>
+                    <option value="">Select an option</option>
+                    <option value="under-25000">$25000 and under</option>
+                    <option value="over-25000">Over $25000</option>
+                    <option value="over-50000">Over $50000</option>
+                    </select>
+                </label>
+                <p class="p-format">Do you intend to apply for test-optional?</p>
+                <label class="test-optional-label" for="yes"><input id="yes" name="test-policy" type="radio" value="yes" checked> Yes</label>
+                <label class="test-optional-label" for="no"><input id="no" name="test-policy" type="radio" value="no"> No</label>
+                <p class="p-format">What are three majors you want to study in the college?</p class="p-format">
+                <label class="majors-label" for="major1">1. <input id="major1" name="major1" type="text" required></label>
+                <label class="majors-label" for="major2">2. <input id="major2" name="major2" type="text" required></label>
+                <label class="majors-label" for="major3">3. <input id="major3" name="major3" type="text" required></label>
+                <p class="p-format">What are your current three most priority colleges?</p class="p-format">
+                <label class="priorities-label" for="priority1">1. <input id="priority1" name="priority1" type="text" required></label>
+                <label class="priorities-label" for="priority2">2. <input id="priority2" name="priority2" type="text" required></label>
+                <label class="priorities-label" for="priority3">3. <input id="priority3" name="priority3" type="text" required></label>
+                <label id="others" for="other-details">Tell us more about what you look for in college below:<textarea id="other-details" name="other-details" rows=3 cols=30 placeholder="I want my college to..."></textarea></label>
+            </fieldset>
+        </div>
+        <button id="submit" type="submit">Submit</submit>
+        </form>
+    </body>
+</html>

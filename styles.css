@@ -1,0 +1,129 @@
+body {
+    width: 100%;
+    height:100vh;
+    margin: 0;
+    font-size: 16px;
+    color: #f5f6f7;
+    font-family: 'Poppins', sans-serif;
+}
+  
+#background {
+    background-image: url("https://i.ibb.co/3r74KVv/Designer-4.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+    margin: 0;
+}
+  
+#title, #description {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    color: #b68391;
+}
+  
+#description {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding-top: unset;
+    color: #c49ba6;
+    font-style: italic;
+}
+  
+#form-body {
+    border-radius: 0.25rem;
+    background-color: rgba(27, 27, 50, 0.8);
+    width: 70vw;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 1rem 1rem 0 1rem;
+}
+  
+#survey-form {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+  
+#personal-information {
+    border-bottom: 3px solid #53536f;
+}
+  
+legend {
+    padding-top: 1rem;
+    text-align: center;
+}
+  
+fieldset {
+    border: none;
+    padding: 2rem 0;
+}
+  
+.p-format, label {
+    display: block;
+    margin: 0.5rem;
+}
+  
+input, textarea, select {
+    padding: 0 5px 0 5px;
+    margin: 10px 0 0 0;
+    width: 60%;
+    min-height: 2em;
+    color: #f5f6f7;
+    border: none;
+    border-bottom: 2px solid #0a0a23;
+    background-color: #28284a;
+}
+  
+input:focus, textarea:focus, select:focus {
+    background-color: #31315a; 
+    border-color: #0a0a23;
+    outline: none;
+}
+  
+input[type="radio"], input[type="checkbox"] {
+    width: unset;
+    min-height: unset;
+    cursor: pointer;
+}
+  
+input[type="number"] {
+    text-align: center;
+    width: 1.5rem;
+}
+  
+select {
+    width: unset;
+}
+  
+/* Remove the spinners */
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+  
+button {
+    display: block;
+    width: 100px;
+    margin: 2rem auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    color: #f5f6f7;
+    border: none;
+    min-width: 300px;
+    cursor: pointer;
+}
+  
+textarea {
+    width: 80%;
+}
